@@ -4,7 +4,7 @@ const blogPosts = [
     {
         id: '1',
         title: 'Apresentação do Mini Curso de Lógica de Programação em Java Script',
-        excerpt: '',
+        excerpt: 'Descubra o propósito do nosso mini curso feito para quem está começando na programação e quer dar o primeiro passo rumo ao curso de BSI! 💻✨',
         author: 'CodeWave',
         date: '2025-10-17',
         readTime: '17 min',
@@ -16,7 +16,7 @@ const blogPosts = [
     {
         id: '2',
         title: '3 Formas de Escrever na Tela em JavaScript',
-        excerpt: '',
+        excerpt: 'Te mostraremos três jeitos de exibir um texto na tela e ainda revela o mistério por trás do famoso “Hello World”! 💻✨',
         author: 'CodeWave',
         date: '2025-10-17',
         readTime: '15 min',
@@ -28,7 +28,7 @@ const blogPosts = [
     {
         id: '3',
         title: 'Aprenda o básico sobre algorítimos',
-        excerpt: '',
+        excerpt: 'Nesta aula, você vai entender o que é um algoritmo e por que ele é essencial para aprender programação e brilhar no seu futuro em BSI! 💻✨',
         author: 'CodeWave',
         date: '2025-10-17',
         readTime: '17 min',
