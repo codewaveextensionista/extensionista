@@ -4,6 +4,7 @@ const areas = [
     {
         id: 'desenvolvimento',
         title: 'Desenvolvimento de Software',
+        card: 'Software',
         description: 'Criação de aplicações web, mobile e desktop usando tecnologias modernas',
         icon: `<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>`,
         skills: ['JavaScript/TypeScript', 'React/Angular/Vue', 'Node.js', 'Python', 'Java', 'C#'],
@@ -14,11 +15,14 @@ const areas = [
             'Arquiteto de Software'
         ],
         salary: 'R$ 6.000 - R$ 15.000',
-        growth: 'Alta demanda no mercado'
+        growth: 'Alta demanda no mercado',
+        font: 'Fonte: Glassdoor e Catho 2024',
+        fontP: 'Fonte: Stack Overflow Survey 2024'
     },
     {
         id: 'dados',
         title: 'Ciência de Dados e BI',
+        card: 'Ciência',
         description: 'Análise de dados, machine learning e business intelligence para tomada de decisões',
         icon: `<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>`,
         skills: ['Python/R', 'SQL', 'Power BI', 'Tableau', 'Machine Learning', 'Estatística'],
@@ -29,11 +33,14 @@ const areas = [
             'Analista de Dados'
         ],
         salary: 'R$ 7.000 - R$ 18.000',
-        growth: 'Crescimento exponencial'
+        growth: 'Crescimento exponencial',
+        font: 'Fonte: Robert Half 2024',
+        fontP: 'Fonte: Gartner e IDC 2024'
     },
     {
         id: 'seguranca',
         title: 'Segurança da Informação',
+        card: 'Segurança',
         description: 'Proteção de sistemas, dados e infraestrutura contra ameaças cibernéticas',
         icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>`,
         skills: ['Ethical Hacking', 'Criptografia', 'Firewall', 'ISO 27001', 'LGPD', 'Forense Digital'],
@@ -44,11 +51,14 @@ const areas = [
             'CISO'
         ],
         salary: 'R$ 8.000 - R$ 20.000',
-        growth: 'Demanda crescente'
+        growth: 'Demanda crescente',
+        font: 'Fonte: LinkedIn Salary 2024',
+        fontP: 'Fonte: Cybersecurity Ventures 2024'
     },
     {
         id: 'mobile',
         title: 'Desenvolvimento Mobile',
+        card: 'Mobile',
         description: 'Criação de aplicativos para dispositivos móveis iOS e Android',
         icon: `<rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>`,
         skills: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Xamarin', 'UI/UX Mobile'],
@@ -59,11 +69,14 @@ const areas = [
             'Mobile Architect'
         ],
         salary: 'R$ 6.500 - R$ 16.000',
-        growth: 'Mercado em expansão'
+        growth: 'Mercado em expansão',
+        font: 'Fonte: Glassdoor 2024',
+        fonteP: 'Fonte: App Annie Report 2024'
     },
     {
         id: 'web',
         title: 'Desenvolvimento Web',
+        card: 'Web',
         description: 'Criação de sites, portais e sistemas web responsivos e modernos',
         icon: `<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>`,
         skills: ['HTML/CSS', 'JavaScript', 'React', 'Next.js', 'PHP', 'WordPress'],
@@ -74,11 +87,14 @@ const areas = [
             'UI Developer'
         ],
         salary: 'R$ 5.000 - R$ 12.000',
-        growth: 'Base sólida do mercado'
+        growth: 'Base sólida do mercado',
+        font: 'Fonte: Catho e Vagas.com 2024',
+        fontP: 'Fonte: W3Techs 2024'
     },
     {
         id: 'banco-dados',
         title: 'Administração de Banco de Dados',
+        card: 'Banco',
         description: 'Gerenciamento, otimização e manutenção de sistemas de banco de dados',
         icon: `<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/>`,
         skills: ['SQL', 'PostgreSQL', 'MySQL', 'MongoDB', 'Oracle', 'Performance Tuning'],
@@ -89,7 +105,9 @@ const areas = [
             'Especialista em SQL'
         ],
         salary: 'R$ 7.500 - R$ 17.000',
-        growth: 'Sempre necessário'
+        growth: 'Sempre necessário',
+        font: 'Fonte: Robert Half 2024',
+        fontP: 'Fonte: DB-Engines Ranking 2024'
     }
 ];
 
@@ -98,7 +116,7 @@ let currentIndex = 0;
 function renderCarousel() {
     const area = areas[currentIndex];
     const carouselCard = document.getElementById('carouselCard');
-    
+
     if (!carouselCard) return;
 
     carouselCard.innerHTML = `
@@ -143,6 +161,7 @@ function renderCarousel() {
                     <div>
                         <p class="info-label">Faixa Salarial</p>
                         <p class="info-value">${area.salary}</p>
+                        <p class="info-value-font">${area.font}</p>
                     </div>
                 </div>
                 <div class="info-box">
@@ -153,6 +172,7 @@ function renderCarousel() {
                     <div>
                         <p class="info-label">Perspectiva</p>
                         <p class="info-value">${area.growth}</p>
+                        <p class="info-value-font">${area.fontP}</p>
                     </div>
                 </div>
             </div>
@@ -189,7 +209,7 @@ function renderTabs() {
             <svg class="carousel-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 ${area.icon}
             </svg>
-            <p class="carousel-tab-text">${area.title.split(' ')[0]}</p>
+            <p class="carousel-tab-text">${area.card}</p>
         </button>
     `).join('');
 }
@@ -210,7 +230,7 @@ function prevSlide() {
 }
 
 // Initialize carousel
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     renderCarousel();
 
     const prevBtn = document.getElementById('prevBtn');

@@ -309,6 +309,17 @@ img {
     font-size: 1.125rem;
     color: var(--muted-foreground);
     line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.section-description-font {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+}
+
+.section-description-list {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
 }
 
 @media (min-width: 768px) {
@@ -385,6 +396,12 @@ img {
     line-height: 1.6;
 }
 
+.card-text-font {
+    color: var(--muted-foreground);
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+}
+
 .card-stat {
     font-size: 1.5rem;
     font-weight: bold;
@@ -426,6 +443,12 @@ img {
 
 .stat-description {
     color: var(--muted-foreground);
+}
+
+.stat-description-2 {
+    color: var(--muted-foreground);
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
 }
 
 /* CTA */
@@ -609,7 +632,7 @@ img {
     flex-shrink: 0;
 }
 
-.info-label {
+.info-label, .info-value-font {
     font-size: 0.875rem;
     color: var(--muted-foreground);
     margin-bottom: 0.125rem;
@@ -752,6 +775,59 @@ img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+}
+
+.grade-curricular {
+  padding: 4rem 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.lista {
+  text-align: left;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.bloco {
+  margin-bottom: 2rem;
+}
+
+.bloco h3 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.bloco ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0.5rem;
+}
+
+.bloco li {
+  margin: 0.25rem 0;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nota {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #666;
 }
 
 @media (min-width: 768px) {
