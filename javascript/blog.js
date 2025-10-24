@@ -36,6 +36,42 @@ const blogPosts = [
         image: './public/Aula_01.png',
         link: 'https://youtu.be/GAdXU2h2Dqo',
         featured: true
+    },
+    {
+        id: '4',
+        title: 'Aprenda sobre o console.log() e Comentários em JavaScript',
+        excerpt: 'Descubra sobre o console.log() e como utilizar comentários! 💻✨',
+        author: 'CodeWave',
+        date: '2025-10-25',
+        readTime: '5 min',
+        category: 'Curso',
+        image: './public/Aula_02.png',
+        link: 'https://youtu.be/N4J3hbQVJdI',
+        featured: true
+    },
+    {
+        id: '5',
+        title: 'Aprenda sobre Variáveis e Tipos de Dados em JavaScript',
+        excerpt: 'Descubra o que são variáveis e tipos de dados em JavaScript! 💻✨',
+        author: 'CodeWave',
+        date: '2025-10-25',
+        readTime: '22 min',
+        category: 'Curso',
+        image: './public/Aula_03.png',
+        link: 'https://youtu.be/4SgjSvjqKGY',
+        featured: true
+    },
+    {
+        id: '6',
+        title: 'Entendendo Operadores Lógicos em JavaScript',
+        excerpt: 'Aprenda sobre operadores lógicos em JavaScript e como eles são usados para tomar decisões no código! 💻✨',
+        author: 'CodeWave',
+        date: '2025-10-25',
+        readTime: '20 min',
+        category: 'Curso',
+        image: './public/Aula_04.png',
+        link: 'https://youtu.be/N4J3hbQVJdI',
+        featured: true
     }
 ];
 
